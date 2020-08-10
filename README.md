@@ -1,5 +1,5 @@
 # atomic-design-sample
-Atomic Design - Design System Sample
+Atomic Design - Design System Sample with Jetpack Compose
 
 Developing!
 
