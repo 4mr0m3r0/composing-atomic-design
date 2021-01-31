@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Atomic Design Sample</string>
+    <string name="type_scale">Type Scale</string>
 </resources>
