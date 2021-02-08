@@ -23,13 +23,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.atomicdesign.ui.AtomicDesignSampleTheme
+import com.example.atomicdesign.ui.components.pages.ComponentsIndex
+import com.example.atomicdesign.ui.components.templates.listoflements.Element
+import com.example.atomicdesign.ui.components.templates.listoflements.ListOfElements
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             AtomicDesignApp {
-                LayoutsCodelab()
+                DefaultContent()
             }
         }
     }
@@ -45,67 +48,28 @@ fun AtomicDesignApp(content: @Composable () -> Unit) {
 }
 
 @Composable
-fun LayoutsCodelab() {
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                title = {
-                    Text(text = "LayoutsCodelab")
-                },
-                actions = {
-                    IconButton(onClick = { /*TODO*/ }) {
-                        Icon(Icons.Filled.Favorite)
-                    }
-                }
-            )
-        }
-    ) { innerPadding ->
-        BodyContent(Modifier.padding(innerPadding).padding(8.dp))
+fun DefaultContent() {
+    Scaffold {
+        ComponentsIndex()
     }
 }
 
+@Preview(showBackground = true, name = "MainActivity light mode")
 @Composable
-fun BodyContent(modifier: Modifier = Modifier) {
-    Column(modifier = modifier) {
-        Text(text = "Hi there!")
-        Text(text = "Thank you for going through Layouts Codelab!")
-    }
-}
-
-@Composable
-fun PhotographerCard(modifier: Modifier = Modifier) {
-    Row(
-        modifier
-            .padding(8.dp)
-            .clip(RoundedCornerShape(4.dp))
-            .background(MaterialTheme.colors.surface)
-            .clickable(onClick = { /*TODO*/ })
-            .padding(16.dp)
-    ) {
-        Surface(
-            modifier = Modifier.preferredSize(50.dp),
-            shape = CircleShape,
-            color = MaterialTheme.colors.onSurface.copy(alpha = 0.2f)
-        ) {
-
-        }
-        Column (
-            modifier = Modifier
-                .padding(start = 8.dp)
-                .align(Alignment.CenterVertically)
-        ) {
-            Text(text = "Alfred Sisley", fontWeight = FontWeight.Bold)
-            Providers(AmbientContentAlpha provides ContentAlpha.medium) {
-                Text(text = "3 minutes ago", style = MaterialTheme.typography.body2)
-            }
+fun DefaultPreviewLight() {
+    AtomicDesignSampleTheme {
+        Surface {
+            ComponentsIndex()
         }
     }
 }
 
-@Preview(showBackground = true, name = "MyScreen preview")
+@Preview(name = "MainActivity dark mode")
 @Composable
-fun DefaultPreview() {
-    AtomicDesignApp {
-        LayoutsCodelab()
+fun DefaultPreviewDark() {
+    AtomicDesignSampleTheme(darkTheme = true) {
+        Surface {
+            ComponentsIndex()
+        }
     }
 }
