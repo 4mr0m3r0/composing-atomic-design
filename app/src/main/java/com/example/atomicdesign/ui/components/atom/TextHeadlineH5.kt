@@ -8,29 +8,29 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.atomicdesign.ui.AtomicDesignSampleTheme
 
 @Composable
-fun TextBody1(text: String) {
+fun TextHeadlineH5(text: String) {
     Text(
         text = text,
-        style = MaterialTheme.typography.body1
+        style = MaterialTheme.typography.h5
     )
 }
 
-@Preview("TextBody1 light theme")
+@Preview("TextHeadlineH5 light theme")
 @Composable
-fun PreviewTextBody1Light() {
+fun PreviewTextHeadlineH5Light() {
     AtomicDesignSampleTheme {
         Surface {
-            TextBody1(text = "Lorem ipsum dolor sit amet.")
+            TextHeadlineH5(text = "Lorem ipsum dolor sit amet.")
         }
     }
 }
 
-@Preview("TextBody1 dark theme")
+@Preview("TextHeadlineH5 dark theme")
 @Composable
-fun PreviewTextBody1Dark() {
+fun PreviewTextHeadlineH5Dark() {
     AtomicDesignSampleTheme(darkTheme = true) {
         Surface {
-            TextBody1(text = "Lorem ipsum dolor sit amet.")
+            TextHeadlineH5(text = "Lorem ipsum dolor sit amet.")
         }
     }
 }

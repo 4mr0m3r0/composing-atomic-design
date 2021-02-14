@@ -11,14 +11,14 @@ import com.example.atomicdesign.ui.AtomicDesignSampleTheme
 import com.example.atomicdesign.ui.components.atom.DefaultDivider
 import com.example.atomicdesign.ui.components.atom.TextBody1
 
-private val ALL_PADDING = 16.dp
+private val DEFAULT_PADDING = 16.dp
 
 @Composable
 fun ElementRow(text: String, onElementSelect: () -> Unit) {
     Row(
         modifier = Modifier
             .clickable(onClick = onElementSelect)
-            .padding(ALL_PADDING)
+            .padding(DEFAULT_PADDING)
             .fillMaxWidth()
     ) {
         TextBody1(text = text)
