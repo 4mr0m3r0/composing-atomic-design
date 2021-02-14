@@ -18,10 +18,10 @@ import java.util.*
 @Composable
 fun PrimaryButton(label: String, onClick: () -> Unit) {
     Button(
-        onClick = { onClick() }
+        onClick = onClick
     ) {
         Text(
-            text = "label.capitalize(Locale.getDefault())",
+            text = label.capitalize(Locale.getDefault()),
             color = MaterialTheme.colors.secondary
         )
     }
