@@ -1,10 +1,16 @@
-# Atomic Design Sample 🚧  👷🏗️  Developing!  🔨👷  🚧
+# Atomic Design Sample
+
+![State](https://img.shields.io/badge/kotlin-v1.4.30-blueviolet)
+![State](https://img.shields.io/badge/gradle-v6.8.1-blue)
+![State](https://img.shields.io/badge/compose-v1.0.0--alpha12-blue)
+
+## 🚧 👷🏗️  Work in Progress  🔨👷 🚧
 Atomic Design - Design System Sample with Jetpack Compose
 
 
 Read more: https://atomicdesign.bradfrost.com/table-of-contents/
 
-### License
+## License
 ```
 MIT License
 
