@@ -4,17 +4,21 @@
 ![State](https://img.shields.io/badge/gradle-v6.8.2-blue)
 ![State](https://img.shields.io/badge/compose-v1.0.0--beta01-blue)
 
-## 🚧 👷🏗️  Work in Progress  🔨👷 🚧
+## 🚧 👷🏗️  In Progress  🔨👷 🚧
 Atomic Design - Design System Sample with Jetpack Compose
 
 
 Read more: https://atomicdesign.bradfrost.com/table-of-contents/
 
+## Navigation
+For navigating through screens this sample is using Navigation with Compose:
+https://developer.android.com/jetpack/compose/navigation
+
 ## License
 ```
 MIT License
 
-Copyright (c) 2019 Angel Manuel Romero Alfonso
+Copyright (c) 2021 Angel Manuel Romero Alfonso
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
