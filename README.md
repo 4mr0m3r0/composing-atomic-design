@@ -3,6 +3,7 @@
 ![State](https://img.shields.io/badge/kotlin-v1.4.30-blueviolet)
 ![State](https://img.shields.io/badge/gradle-v6.8.2-blue)
 ![State](https://img.shields.io/badge/compose-v1.0.0--beta01-blue)
+![State](https://img.shields.io/badge/navigation--compose-v1.0.0--alpha08-blue)
 
 ## 🚧 👷🏗️  In Progress  🔨👷 🚧
 Atomic Design - Design System Sample with Jetpack Compose
