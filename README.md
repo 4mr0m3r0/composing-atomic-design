@@ -15,6 +15,10 @@ Read more: https://atomicdesign.bradfrost.com/table-of-contents/
 For navigating through screens this sample is using Navigation with Compose:
 https://developer.android.com/jetpack/compose/navigation
 
+## Screens added
+* Buttons
+* Error Template
+
 ## License
 ```
 MIT License
