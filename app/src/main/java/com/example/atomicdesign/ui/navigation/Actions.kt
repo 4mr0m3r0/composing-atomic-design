@@ -6,11 +6,15 @@ import androidx.navigation.compose.navigate
 class Actions(navHostController: NavHostController) {
 
     val componentsIndexAction: () -> Unit = {
-        navHostController.navigate(Routes.COMPONENT_INDEX)
+        navHostController.navigate(Routes.COMPONENT_INDEX_SCREEN)
+    }
+
+    val buttonsAction: () -> Unit = {
+        navHostController.navigate(Routes.BUTTONS_SCREEN)
     }
 
     val errorAction: () -> Unit = {
-        navHostController.navigate(Routes.ERROR)
+        navHostController.navigate(Routes.ERROR_SCREEN)
     }
 
 }

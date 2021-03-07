@@ -3,9 +3,9 @@ package com.example.atomicdesign.ui.components.pages
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.atomicdesign.ui.AtomicDesignSampleTheme
 import com.example.atomicdesign.ui.components.templates.listoflements.Element
 import com.example.atomicdesign.ui.components.templates.listoflements.ListOfElements
+import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
 
 @Composable
 fun ComponentsIndexScreen(

@@ -1,15 +1,16 @@
 package com.example.atomicdesign.ui.components.molecules
 
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.atomicdesign.ui.AtomicDesignSampleTheme
-import com.example.atomicdesign.ui.components.atom.DefaultDivider
 import com.example.atomicdesign.ui.components.atom.TextBody1
+import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
 
 private val DEFAULT_PADDING = 16.dp
 

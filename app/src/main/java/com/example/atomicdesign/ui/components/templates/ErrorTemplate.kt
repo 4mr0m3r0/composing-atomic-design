@@ -6,10 +6,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.atomicdesign.ui.AtomicDesignSampleTheme
 import com.example.atomicdesign.ui.components.atom.PrimaryButton
 import com.example.atomicdesign.ui.components.atom.TextBody1
 import com.example.atomicdesign.ui.components.atom.TextHeadlineH5
+import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
 
 private val DEFAULT_PADDING = 50.dp
 

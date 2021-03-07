@@ -1,4 +1,4 @@
-package com.example.atomicdesign.ui
+package com.example.atomicdesign.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
