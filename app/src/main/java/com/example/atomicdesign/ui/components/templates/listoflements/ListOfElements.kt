@@ -5,7 +5,7 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.atomicdesign.ui.components.atom.DefaultDivider
+import com.example.atomicdesign.ui.components.atom.HorizontalDivider
 import com.example.atomicdesign.ui.components.molecules.ElementRow
 import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
 
@@ -20,7 +20,7 @@ fun ListOfElements(
                 onElementSelect = element.onElementSelect
             )
             if (index < elements.size - 1) {
-                DefaultDivider()
+                HorizontalDivider()
             }
         }
     }

@@ -6,9 +6,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.atomicdesign.ui.components.atom.Body1
+import com.example.atomicdesign.ui.components.atom.HeadlineH5
 import com.example.atomicdesign.ui.components.atom.PrimaryButton
-import com.example.atomicdesign.ui.components.atom.TextBody1
-import com.example.atomicdesign.ui.components.atom.TextHeadlineH5
 import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
 
 private val DEFAULT_PADDING = 50.dp
@@ -21,9 +21,9 @@ fun ErrorTemplate(title: String, contentMsg: String, buttonLabel: String, button
             .fillMaxSize()
     ) {
         Spacer(modifier = Modifier.size(100.dp))
-        TextHeadlineH5(text = title)
+        HeadlineH5(text = title)
         Spacer(modifier = Modifier.size(20.dp))
-        TextBody1(text = contentMsg)
+        Body1(text = contentMsg)
         Spacer(modifier = Modifier.size(100.dp))
         Row(
             Modifier.fillMaxWidth(),

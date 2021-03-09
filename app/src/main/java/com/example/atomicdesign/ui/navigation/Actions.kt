@@ -17,4 +17,8 @@ class Actions(navHostController: NavHostController) {
         navHostController.navigate(Routes.ERROR_SCREEN)
     }
 
+    val typeScaleAction: () -> Unit = {
+        navHostController.navigate(Routes.TYPE_SCALE_SCREEN)
+    }
+
 }

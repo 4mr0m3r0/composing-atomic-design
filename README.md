@@ -18,6 +18,7 @@ https://developer.android.com/jetpack/compose/navigation
 ## Screens added
 * Buttons
 * Error Template
+* Type Scale
 
 ## License
 ```

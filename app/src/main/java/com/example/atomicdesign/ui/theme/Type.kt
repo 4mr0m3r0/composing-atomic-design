@@ -24,7 +24,7 @@ val Typography = Typography(
         h1 = TextStyle(
                 fontFamily = SansPro,
                 fontWeight = FontWeight.Light,
-                fontSize = 96.sp,
+                fontSize = 82.sp,
                 letterSpacing = (-1.5).sp
         ),
         h2 = TextStyle(
