@@ -1,12 +1,12 @@
-# Atomic Design Sample
+# Composing Atomic Design
 
-![State](https://img.shields.io/badge/kotlin-v1.4.30-blueviolet)
+![State](https://img.shields.io/badge/kotlin-v1.4.31-blueviolet)
 ![State](https://img.shields.io/badge/gradle-v6.8.2-blue)
-![State](https://img.shields.io/badge/compose-v1.0.0--beta01-blue)
-![State](https://img.shields.io/badge/navigation--compose-v1.0.0--alpha08-blue)
+![State](https://img.shields.io/badge/compose-v1.0.0--beta02-blue)
+![State](https://img.shields.io/badge/navigation--compose-v1.0.0--alpha09-blue)
 
 ## 🚧 👷🏗️  In Progress  🔨👷 🚧
-Atomic Design - Design System Sample with Jetpack Compose
+Atomic Design sample with Jetpack Compose.
 
 
 Read more: https://atomicdesign.bradfrost.com/table-of-contents/
@@ -16,9 +16,29 @@ For navigating through screens this sample is using Navigation with Compose:
 https://developer.android.com/jetpack/compose/navigation
 
 ## Screens added
-* Buttons
-* Error Template
-* Type Scale
+| Templates      | Atoms                                                         |
+| ------------   | ----------                                                    |
+| Error Template | Buttons                                                       |
+|                | Type Scale                                                    |
+|                | Text Fields (Email, Password, Regular, Numbers only, Currency)|
+
+## Resources
+
+### Documentation
+* https://developer.android.com/jetpack/compose
+* Pathways: https://developer.android.com/courses/pathways/compose
+* Jetpack Compose Playground: https://foso.github.io/Jetpack-Compose-Playground/
+* Managing State: https://developer.android.com/jetpack/compose/state
+
+### Github Samples
+* https://github.com/android/compose-samples
+
+### Google Code Labs
+* Compose Basics: https://developer.android.com/codelabs/jetpack-compose-basics#0
+* Compose Layouts: https://developer.android.com/codelabs/jetpack-compose-layouts?authuser=1#0
+* State in Compose: https://developer.android.com/codelabs/jetpack-compose-state?authuser=1#0
+* Compose Theming: https://developer.android.com/codelabs/jetpack-compose-theming?authuser=1#0
+* Migrating to Compose: https://developer.android.com/codelabs/jetpack-compose-migration?authuser=1#0
 
 ## License
 ```

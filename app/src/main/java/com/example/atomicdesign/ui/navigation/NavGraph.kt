@@ -5,10 +5,7 @@ import androidx.compose.runtime.remember
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.atomicdesign.ui.components.pages.ButtonsScreen
-import com.example.atomicdesign.ui.components.pages.ComponentsIndexScreen
-import com.example.atomicdesign.ui.components.pages.ErrorScreen
-import com.example.atomicdesign.ui.components.pages.TypeScaleScreen
+import com.example.atomicdesign.ui.components.pages.*
 
 @Composable
 fun NavGraph(startDestination: String = Routes.COMPONENT_INDEX_SCREEN) {
@@ -23,6 +20,7 @@ fun NavGraph(startDestination: String = Routes.COMPONENT_INDEX_SCREEN) {
             ComponentsIndexScreen(
                 buttonsAction = actions.buttonsAction,
                 errorTemplateAction = actions.errorAction,
+                textFieldsAction = actions.textFieldsAction,
                 typeScaleAction = actions.typeScaleAction,
             )
         }
@@ -31,6 +29,9 @@ fun NavGraph(startDestination: String = Routes.COMPONENT_INDEX_SCREEN) {
         }
         composable(Routes.ERROR_SCREEN) {
             ErrorScreen()
+        }
+        composable(Routes.TEXT_FIELDS_SCREEN) {
+            TextFieldsScreen()
         }
         composable(Routes.TYPE_SCALE_SCREEN) {
             TypeScaleScreen()

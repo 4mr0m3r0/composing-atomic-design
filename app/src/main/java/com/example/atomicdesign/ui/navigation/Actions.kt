@@ -17,6 +17,10 @@ class Actions(navHostController: NavHostController) {
         navHostController.navigate(Routes.ERROR_SCREEN)
     }
 
+    val textFieldsAction: () -> Unit = {
+        navHostController.navigate(Routes.TEXT_FIELDS_SCREEN)
+    }
+
     val typeScaleAction: () -> Unit = {
         navHostController.navigate(Routes.TYPE_SCALE_SCREEN)
     }

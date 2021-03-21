@@ -11,6 +11,7 @@ import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
 fun ComponentsIndexScreen(
     buttonsAction: () -> Unit,
     errorTemplateAction: () -> Unit,
+    textFieldsAction: () -> Unit,
     typeScaleAction: () -> Unit
 ) {
     ListOfElements(elements = listOf(
@@ -23,10 +24,13 @@ fun ComponentsIndexScreen(
             onElementSelect = errorTemplateAction
         ),
         Element(
+            text = "Text Fields",
+            onElementSelect = textFieldsAction
+        ),
+        Element(
             text = "Type Scale",
             onElementSelect = typeScaleAction
         ),
-        Element(text = "Element 4", onElementSelect = {}),
         Element(text = "Element 5", onElementSelect = {}),
         Element(text = "Element 6", onElementSelect = {}),
         Element(text = "Element 7", onElementSelect = {}),
@@ -48,7 +52,8 @@ fun PreviewComponentsIndexLight() {
             ComponentsIndexScreen(
                 buttonsAction = {},
                 errorTemplateAction = {},
-                typeScaleAction = {}
+                textFieldsAction = {},
+                typeScaleAction = {},
             )
         }
     }
@@ -62,7 +67,8 @@ fun PreviewComponentsIndexDark() {
             ComponentsIndexScreen(
                 buttonsAction = {},
                 errorTemplateAction = {},
-                typeScaleAction = {}
+                textFieldsAction = {},
+                typeScaleAction = {},
             )
         }
     }
