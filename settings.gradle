@@ -1,2 +1,2 @@
-rootProject.name = "Atomic Design Sample"
+rootProject.name = "Composing Atomic Design"
 include ':app'

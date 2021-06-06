@@ -10,6 +10,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.atomicdesign.R
 import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
@@ -20,20 +21,17 @@ fun EmailTextField(
     emailText: String,
     onEmailChange: (String) -> Unit,
     imeAction: ImeAction = ImeAction.Next,
-    onImeAction: () -> Unit = {}
+    keyboardActions: KeyboardActions = KeyboardActions.Default
 ) {
     OutlinedTextField(
         value = emailText,
         onValueChange = { onEmailChange(it) },
-        label = {
-            Text(text = label)
-        },
-        keyboardOptions = KeyboardOptions.Default.copy(imeAction = imeAction),
-        keyboardActions = KeyboardActions(
-            onDone = {
-                onImeAction()
-            }
-        )
+        label = { Text(text = label) },
+        keyboardOptions = KeyboardOptions(
+            keyboardType = KeyboardType.Email
+        ).copy(imeAction = imeAction),
+        keyboardActions = keyboardActions,
+        maxLines = 1,
     )
 }
 
@@ -42,11 +40,11 @@ fun EmailTextField(
 fun PreviewEmailTextFieldLight() {
     AtomicDesignSampleTheme {
         Surface {
-            val emailText = remember { mutableStateOf("") }
+            val (emailText, setEmailText) = remember { mutableStateOf("") }
             EmailTextField(
                 label = "Email",
-                emailText = emailText.value,
-                onEmailChange = { emailText.value = it }
+                emailText = emailText,
+                onEmailChange = setEmailText
             )
         }
     }
@@ -57,11 +55,11 @@ fun PreviewEmailTextFieldLight() {
 fun PreviewEmailTextFieldDark() {
     AtomicDesignSampleTheme(darkTheme = true) {
         Surface {
-            val emailText = remember { mutableStateOf("") }
+            val (emailText, setEmailText) = remember { mutableStateOf("") }
             EmailTextField(
                 label = "Email",
-                emailText = emailText.value,
-                onEmailChange = { emailText.value = it }
+                emailText = emailText,
+                onEmailChange = setEmailText
             )
         }
     }

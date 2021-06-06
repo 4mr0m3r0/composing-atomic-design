@@ -20,7 +20,7 @@ fun SecondaryButton(label: String, onClick: () -> Unit, modifier: Modifier = Mod
         modifier = modifier
     ) {
         Text(
-            text = label.toUpperCase(Locale.getDefault()),
+            text = label.uppercase(Locale.getDefault()),
             color = MaterialTheme.colors.secondary
         )
     }

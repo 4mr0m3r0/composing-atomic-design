@@ -6,8 +6,12 @@ import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.atomicdesign.R
 import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
@@ -15,21 +19,21 @@ import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
 @Composable
 fun PasswordTextField(
     label: String = stringResource(id = R.string.password),
+    passwordText: String,
+    onPasswordChange: (String) -> Unit,
     imeAction: ImeAction = ImeAction.Next,
-    onImeAction: () -> Unit = {}
+    keyboardActions: KeyboardActions = KeyboardActions.Default
 ) {
     OutlinedTextField(
-        value = "",
-        onValueChange = { /*TODO*/ },
-        label = {
-            Text(text = label)
-        },
-        keyboardOptions = KeyboardOptions.Default.copy(imeAction = imeAction),
-        keyboardActions = KeyboardActions(
-            onDone = {
-                onImeAction()
-            }
-        )
+        value = passwordText,
+        onValueChange = { onPasswordChange(it) },
+        label = { Text(text = label) },
+        keyboardOptions = KeyboardOptions(
+            keyboardType = KeyboardType.Password
+        ).copy(imeAction = imeAction),
+        keyboardActions = keyboardActions,
+        visualTransformation = PasswordVisualTransformation(),
+        maxLines = 1
     )
 }
 
@@ -38,7 +42,12 @@ fun PasswordTextField(
 fun PreviewPasswordTextFieldLight() {
     AtomicDesignSampleTheme {
         Surface {
-            PasswordTextField(label = "Password")
+            val (passwordText, setPasswordText) = remember { mutableStateOf("") }
+            PasswordTextField(
+                label = "Password",
+                passwordText = passwordText,
+                onPasswordChange = setPasswordText
+            )
         }
     }
 }
@@ -48,7 +57,12 @@ fun PreviewPasswordTextFieldLight() {
 fun PreviewPasswordTextFieldDark() {
     AtomicDesignSampleTheme(darkTheme = true) {
         Surface {
-            PasswordTextField(label = "Password")
+            val (passwordText, setPasswordText) = remember { mutableStateOf("") }
+            PasswordTextField(
+                label = "Password",
+                passwordText = passwordText,
+                onPasswordChange = setPasswordText
+            )
         }
     }
 }

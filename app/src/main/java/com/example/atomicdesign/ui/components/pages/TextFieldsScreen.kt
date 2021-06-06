@@ -1,6 +1,7 @@
 package com.example.atomicdesign.ui.components.pages
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -10,6 +11,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.atomicdesign.ui.components.atom.EmailTextField
+import com.example.atomicdesign.ui.components.atom.PasswordTextField
 import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
 
 private val DEFAULT_PADDING = 50.dp
@@ -21,14 +23,25 @@ fun TextFieldsScreen() {
             .padding(DEFAULT_PADDING)
             .fillMaxWidth()
     ) {
-        val emailText = remember { mutableStateOf("") }
+        val (emailText, setEmailText) = remember { mutableStateOf("") }
         EmailTextField(
             label = "Email",
-            emailText = emailText.value,
-            onEmailChange = { emailText.value = it },
-            imeAction = ImeAction.Done
+            emailText = emailText,
+            onEmailChange = setEmailText,
         )
         Spacer(modifier = Modifier.size(50.dp))
+        val (passwordText, setPasswordText) = remember { mutableStateOf("") }
+        PasswordTextField(
+            label = "Password",
+            passwordText = passwordText,
+            onPasswordChange = setPasswordText,
+            imeAction = ImeAction.Done,
+            keyboardActions = KeyboardActions(
+                onDone = {
+                    println("onDone Action")
+                }
+            )
+        )
     }
 }
 

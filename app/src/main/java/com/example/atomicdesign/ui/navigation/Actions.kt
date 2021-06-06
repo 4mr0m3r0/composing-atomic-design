@@ -1,7 +1,6 @@
 package com.example.atomicdesign.ui.navigation
 
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.navigate
 
 class Actions(navHostController: NavHostController) {
 

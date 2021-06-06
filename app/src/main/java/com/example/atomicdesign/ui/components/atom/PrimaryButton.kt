@@ -17,7 +17,7 @@ fun PrimaryButton(label: String, onClick: () -> Unit, modifier: Modifier = Modif
         modifier = modifier
     ) {
         Text(
-            text = label.toUpperCase(Locale.getDefault()),
+            text = label.uppercase(Locale.getDefault()),
             color = Color.White
         )
     }
