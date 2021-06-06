@@ -1,7 +1,7 @@
 # Composing Atomic Design
 
 ![State](https://img.shields.io/badge/kotlin-v1.5.10-blueviolet)
-![State](https://img.shields.io/badge/gradle-v7.0.0-beta03-blue)
+![State](https://img.shields.io/badge/gradle-v7.0.0--beta03-blue)
 ![State](https://img.shields.io/badge/compose-v1.0.0--beta08-blue)
 ![State](https://img.shields.io/badge/navigation--compose-v2.4.0--alpha02-blue)
 
