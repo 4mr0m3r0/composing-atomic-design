@@ -5,7 +5,7 @@ import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material.Surface
 import com.example.atomicdesign.ui.navigation.NavGraph
-import com.example.atomicdesign.ui.theme.AtomicDesignSampleTheme
+import com.example.ui_components.theme.AtomicDesignSampleTheme
 
 class MainActivity : AppCompatActivity() {
 
