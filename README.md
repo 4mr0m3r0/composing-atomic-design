@@ -30,6 +30,7 @@ https://developer.android.com/jetpack/compose/navigation
 * Jetpack Compose Playground: https://foso.github.io/Jetpack-Compose-Playground/
 * Managing State: https://developer.android.com/jetpack/compose/state
 * Architecting your Compose UI: https://developer.android.com/jetpack/compose/architecture
+* Accompanist: https://github.com/google/accompanist
 
 
 ### Github
