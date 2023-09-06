@@ -2,12 +2,12 @@ package com.example.atomicdesign.ui.pages
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.Surface
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -24,7 +24,7 @@ import com.example.ui_components.atom.HeadlineH6
 import com.example.ui_components.atom.HorizontalDivider
 import com.example.ui_components.atom.Subtitle1
 import com.example.ui_components.atom.Subtitle2
-import com.example.ui_components.theme.AtomicDesignSampleTheme
+import com.example.ui_components.theme.DesignSystemTheme
 
 private val DEFAULT_PADDING = 10.dp
 
@@ -33,7 +33,7 @@ fun TypeScaleScreen() {
     Column(
         modifier = Modifier
             .padding(DEFAULT_PADDING)
-            .fillMaxWidth()
+            .fillMaxSize()
             .verticalScroll(rememberScrollState())
     ) {
         HeadlineH1(text = "H1 Headline")
@@ -84,7 +84,7 @@ fun TypeScaleScreen() {
 @Preview("TypeScaleScreen light theme")
 @Composable
 fun PreviewTypeScaleScreenLight() {
-    AtomicDesignSampleTheme {
+    DesignSystemTheme {
         Surface {
             TypeScaleScreen()
         }
@@ -94,7 +94,7 @@ fun PreviewTypeScaleScreenLight() {
 @Preview("TypeScaleScreen dark theme")
 @Composable
 fun PreviewTypeScaleScreenDark() {
-    AtomicDesignSampleTheme(darkTheme = true) {
+    DesignSystemTheme(darkTheme = true) {
         Surface {
             TypeScaleScreen()
         }

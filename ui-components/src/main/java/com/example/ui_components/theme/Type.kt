@@ -1,6 +1,6 @@
 package com.example.ui_components.theme
 
-import androidx.compose.material.Typography
+import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -21,74 +21,106 @@ val SansPro = FontFamily(
 )
 
 val Typography = Typography(
-        h1 = TextStyle(
+        displayLarge = TextStyle(
                 fontFamily = SansPro,
+                lineHeight = 64.sp,
                 fontWeight = FontWeight.Light,
-                fontSize = 82.sp,
+                fontSize = 57.sp,
                 letterSpacing = (-1.5).sp
         ),
-        h2 = TextStyle(
+        displayMedium = TextStyle(
                 fontFamily = SansPro,
+                lineHeight = 52.sp,
                 fontWeight = FontWeight.Light,
-                fontSize = 60.sp,
+                fontSize = 45.sp,
                 letterSpacing = (-0.5).sp
         ),
-        h3 = TextStyle(
+        displaySmall = TextStyle(
                 fontFamily = SansPro,
+                lineHeight = 44.sp,
                 fontWeight = FontWeight.W400,
-                fontSize = 48.sp
+                fontSize = 36.sp
         ),
-        h4 = TextStyle(
+        headlineLarge = TextStyle(
                 fontFamily = SansPro,
+                lineHeight = 40.sp,
                 fontWeight = FontWeight.W400,
-                fontSize = 34.sp,
-                letterSpacing = (0.25).sp
+                fontSize = 32.sp,
         ),
-        h5 = TextStyle(
+        headlineMedium = TextStyle(
                 fontFamily = SansPro,
+                lineHeight = 36.sp,
                 fontWeight = FontWeight.W400,
-                fontSize = 24.sp
+                fontSize = 28.sp
         ),
-        h6 = TextStyle(
+        headlineSmall = TextStyle(
                 fontFamily = SansPro,
+                lineHeight = 32.sp,
                 fontWeight = FontWeight.W600,
-                fontSize = 20.sp,
+                fontSize = 24.sp,
                 letterSpacing = (0.15).sp
         ),
-        subtitle1 = TextStyle(
+        titleLarge = TextStyle(
                 fontFamily = SansPro,
+                lineHeight = 28.sp,
                 fontWeight = FontWeight.W400,
+                fontSize = 22.sp,
+                letterSpacing = (0.15).sp
+        ),
+        titleMedium = TextStyle(
+                fontFamily = SansPro,
+                lineHeight = 24.sp,
+                fontWeight = FontWeight.W600,
                 fontSize = 16.sp,
-                letterSpacing = (0.15).sp
+                letterSpacing = (0.1).sp
         ),
-        subtitle2 = TextStyle(
+        titleSmall = TextStyle(
                 fontFamily = SansPro,
-                fontWeight = FontWeight.W600,
+                lineHeight = 16.sp,
+                fontWeight = FontWeight.W400,
                 fontSize = 14.sp,
                 letterSpacing = (0.1).sp
         ),
-        body1 = TextStyle(
+        bodyLarge = TextStyle(
                 fontFamily = SansPro,
+                lineHeight = 24.sp,
                 fontWeight = FontWeight.W400,
-                fontSize = 18.sp,
-                letterSpacing = (0.5).sp
+                fontSize = 16.sp,
+                letterSpacing = (0.1).sp
         ),
-        body2 = TextStyle(
+        bodyMedium = TextStyle(
                 fontFamily = SansPro,
-                fontWeight = FontWeight.W400,
+                lineHeight = 20.sp,
+                fontWeight = FontWeight.W600,
                 fontSize = 14.sp,
                 letterSpacing = (0.25).sp
         ),
-        button = TextStyle(
+        bodySmall = TextStyle(
                 fontFamily = SansPro,
-                fontWeight = FontWeight.W600,
-                fontSize = 14.sp,
-                letterSpacing = (1.25).sp
-        ),
-        caption = TextStyle(
-                fontFamily = SansPro,
+                lineHeight = 16.sp,
                 fontWeight = FontWeight.W400,
                 fontSize = 12.sp,
                 letterSpacing = (0.4).sp
+        ),
+        labelLarge = TextStyle(
+                fontFamily = SansPro,
+                lineHeight = 20.sp,
+                fontWeight = FontWeight.W400,
+                fontSize = 14.sp,
+                letterSpacing = (0.1).sp
+        ),
+        labelMedium = TextStyle(
+                fontFamily = SansPro,
+                lineHeight = 16.sp,
+                fontWeight = FontWeight.W500,
+                fontSize = 12.sp,
+                letterSpacing = (0.5).sp
+        ),
+        labelSmall = TextStyle(
+                fontFamily = SansPro,
+                lineHeight = 16.sp,
+                fontWeight = FontWeight.W500,
+                fontSize = 11.sp,
+                letterSpacing = (0.5).sp
         ),
 )

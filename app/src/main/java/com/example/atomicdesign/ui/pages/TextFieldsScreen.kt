@@ -2,11 +2,11 @@ package com.example.atomicdesign.ui.pages
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.text.KeyboardActions
-import androidx.compose.material.Surface
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -16,7 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.ui_components.atom.EmailTextField
 import com.example.ui_components.atom.PasswordTextField
-import com.example.ui_components.theme.AtomicDesignSampleTheme
+import com.example.ui_components.theme.DesignSystemTheme
 
 private val DEFAULT_PADDING = 50.dp
 
@@ -25,7 +25,7 @@ fun TextFieldsScreen() {
     Column(
         modifier = Modifier
             .padding(DEFAULT_PADDING)
-            .fillMaxWidth()
+            .fillMaxSize()
     ) {
         val (emailText, setEmailText) = remember { mutableStateOf("") }
         EmailTextField(
@@ -52,7 +52,7 @@ fun TextFieldsScreen() {
 @Preview("TextFieldsScreen light theme")
 @Composable
 fun PreviewTextFieldsScreenLight() {
-    AtomicDesignSampleTheme {
+    DesignSystemTheme {
         Surface {
             TextFieldsScreen()
         }
@@ -62,7 +62,7 @@ fun PreviewTextFieldsScreenLight() {
 @Preview("TextFieldsScreen dark theme")
 @Composable
 fun PreviewTextFieldsScreenDark() {
-    AtomicDesignSampleTheme(darkTheme = true) {
+    DesignSystemTheme(darkTheme = true) {
         Surface {
             TextFieldsScreen()
         }

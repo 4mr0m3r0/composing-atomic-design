@@ -1,28 +1,29 @@
 # Composing Atomic Design
 
-![State](https://img.shields.io/badge/kotlin-v1.5.10-blueviolet)
-![State](https://img.shields.io/badge/gradle-v7.0.0--beta03-blue)
-![State](https://img.shields.io/badge/compose-v1.0.0--beta08-blue)
+![State](https://img.shields.io/badge/kotlin-v1.8.22-blueviolet)
+![State](https://img.shields.io/badge/AGP-v8.1.0-blue)
+![State](https://img.shields.io/badge/compose-v2023.08.00-blue)
 ![State](https://img.shields.io/badge/navigation--compose-v2.4.0--alpha02-blue)
 
 ## 🚧 👷🏗️  In Progress  🔨👷 🚧
-Atomic Design sample with Jetpack Compose.
+This a demonstration project about creating a Design System using Atomic Design as a methodology.  
+It is built on top of [**Material 3**](https://m3.material.io/) and [**Jetpack Compose**](https://developer.android.com/jetpack/compose).
 
 
-Read more: https://atomicdesign.bradfrost.com/table-of-contents/
+Read more about Atomic Design methodology: https://atomicdesign.bradfrost.com/table-of-contents/
 
-## Navigation
-For navigating through screens this sample is using Navigation with Compose:
-https://developer.android.com/jetpack/compose/navigation
+## Components
+You may find the following list of components customized with styles and animations. 
 
-## Screens added
-| Templates      | Atoms                                                         |
-| ------------   | ----------                                                    |
-| Error Template | Buttons                                                       |
-|                | Type Scale                                                    |
-|                | Text Fields (Email, Password, Regular, Numbers only, Currency)|
+| Atoms              | Molecules  | Templates      |
+|--------------------|------------|----------------|
+| Button Primary     | AssistChip | Error Template |
+| Button Secondary   |            |                |
+| TextField Password |            |                |
+| TextField Email    |            |                |
+| Type Scale         |            |                |
 
-## Some Resources
+## Jetpack Compose Resources
 
 ### Documentation
 * https://developer.android.com/jetpack/compose
@@ -47,9 +48,6 @@ https://developer.android.com/jetpack/compose/navigation
 ### Channels
 * **Kotlinlang**: kotlinlang.slack.com 👉 **#compose**
 * Compose Academy: https://compose.academy/ 👉 **Discord**: https://discord.gg/TXvXcpKbHm
-
-### More
-
 
 ## License
 ```

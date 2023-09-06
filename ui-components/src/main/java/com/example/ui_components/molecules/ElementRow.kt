@@ -4,12 +4,13 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.Surface
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.ui_components.atom.Body1
+import com.example.ui_components.theme.DesignSystemTheme
 
 private val DEFAULT_PADDING = 16.dp
 
@@ -28,7 +29,7 @@ fun ElementRow(text: String, onElementSelect: () -> Unit) {
 @Preview("ElementRow light theme")
 @Composable
 fun PreviewElementRowLight() {
-    com.example.ui_components.theme.AtomicDesignSampleTheme {
+    DesignSystemTheme {
         Surface {
             ElementRow(text = "Lorem ipsum dolor sit amet.") { }
         }
@@ -38,7 +39,7 @@ fun PreviewElementRowLight() {
 @Preview("ElementRow dark theme")
 @Composable
 fun PreviewElementRowDark() {
-    com.example.ui_components.theme.AtomicDesignSampleTheme(darkTheme = true) {
+    DesignSystemTheme(darkTheme = true) {
         Surface {
             ElementRow(text = "Lorem ipsum dolor sit amet.") { }
         }

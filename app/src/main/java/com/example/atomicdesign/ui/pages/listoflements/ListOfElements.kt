@@ -2,18 +2,20 @@ package com.example.atomicdesign.ui.pages.listoflements
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material.Surface
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.ui_components.atom.HorizontalDivider
 import com.example.ui_components.molecules.ElementRow
-import com.example.ui_components.theme.AtomicDesignSampleTheme
+import com.example.ui_components.theme.DesignSystemTheme
 
 @Composable
 fun ListOfElements(
-    elements: List<Element>
+    elements: List<Element>,
+    modifier: Modifier = Modifier
 ) {
-    LazyColumn {
+    LazyColumn(modifier = modifier) {
         itemsIndexed(elements) { index, element ->
             ElementRow(
                 text = element.text,
@@ -29,7 +31,7 @@ fun ListOfElements(
 @Preview("ListOfElements light theme")
 @Composable
 fun PreviewListOfElementsLight() {
-    AtomicDesignSampleTheme {
+    DesignSystemTheme {
         Surface {
             ListOfElements(
                 elements = listOf(
@@ -47,7 +49,7 @@ fun PreviewListOfElementsLight() {
 @Preview("ListOfElements dark theme")
 @Composable
 fun PreviewListOfElementsDark() {
-    AtomicDesignSampleTheme(darkTheme = true) {
+    DesignSystemTheme(darkTheme = true) {
         Surface {
             ListOfElements(
                 elements = listOf(
