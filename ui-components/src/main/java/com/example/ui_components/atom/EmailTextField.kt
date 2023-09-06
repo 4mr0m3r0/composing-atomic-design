@@ -2,16 +2,16 @@ package com.example.ui_components.atom
 
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.OutlinedTextField
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.ui_components.theme.AtomicDesignSampleTheme
+import com.example.ui_components.theme.DesignSystemTheme
 
 @Composable
 fun EmailTextField(
@@ -36,7 +36,7 @@ fun EmailTextField(
 @Preview("EmailTextField light mode")
 @Composable
 fun PreviewEmailTextFieldLight() {
-    AtomicDesignSampleTheme {
+    DesignSystemTheme {
         Surface {
             val (emailText, setEmailText) = remember { mutableStateOf("") }
             EmailTextField(
@@ -51,7 +51,7 @@ fun PreviewEmailTextFieldLight() {
 @Preview("EmailTextField dark mode")
 @Composable
 fun PreviewEmailTextFieldDark() {
-    AtomicDesignSampleTheme(darkTheme = true) {
+    DesignSystemTheme(darkTheme = true) {
         Surface {
             val (emailText, setEmailText) = remember { mutableStateOf("") }
             EmailTextField(

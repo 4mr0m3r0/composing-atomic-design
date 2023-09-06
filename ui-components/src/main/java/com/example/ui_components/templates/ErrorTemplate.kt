@@ -1,7 +1,14 @@
 package com.example.ui_components.templates
 
-import androidx.compose.foundation.layout.*
-import androidx.compose.material.Surface
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -9,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.example.ui_components.atom.Body1
 import com.example.ui_components.atom.HeadlineH5
 import com.example.ui_components.atom.PrimaryButton
+import com.example.ui_components.theme.DesignSystemTheme
 
 private val DEFAULT_PADDING = 50.dp
 
@@ -39,7 +47,7 @@ fun ErrorTemplate(title: String, contentMsg: String, buttonLabel: String, button
 @Preview("ErrorTemplate light theme")
 @Composable
 fun PreviewErrorTemplateLight() {
-    com.example.ui_components.theme.AtomicDesignSampleTheme {
+    DesignSystemTheme {
         Surface {
             ErrorTemplate(
                 title = "Title",
@@ -54,7 +62,7 @@ fun PreviewErrorTemplateLight() {
 @Preview("ErrorTemplate dark theme")
 @Composable
 fun PreviewErrorTemplateDark() {
-    com.example.ui_components.theme.AtomicDesignSampleTheme(darkTheme = true) {
+    DesignSystemTheme(darkTheme = true) {
         Surface {
             ErrorTemplate(
                 title = "Title",
