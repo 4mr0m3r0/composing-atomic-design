@@ -55,9 +55,9 @@ fun FilterAssistChip(
             )
         },
         border = if (leadingIconVisible) {
-            AssistChipDefaults.assistChipBorder(borderColor = Seed)
+            AssistChipDefaults.assistChipBorder(enabled = true, borderColor = Seed)
         } else {
-            AssistChipDefaults.assistChipBorder()
+            AssistChipDefaults.assistChipBorder(enabled = true)
         }
     )
 }

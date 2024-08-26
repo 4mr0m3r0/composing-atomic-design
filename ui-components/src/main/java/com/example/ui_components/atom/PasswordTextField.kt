@@ -12,6 +12,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.ui_components.theme.DesignSystemTheme
 
 @Composable
 fun PasswordTextField(
@@ -37,7 +38,7 @@ fun PasswordTextField(
 @Preview("PasswordTextField light mode")
 @Composable
 fun PreviewPasswordTextFieldLight() {
-    com.example.ui_components.theme.DesignSystemTheme {
+    DesignSystemTheme {
         Surface {
             val (passwordText, setPasswordText) = remember { mutableStateOf("") }
             PasswordTextField(
@@ -52,7 +53,7 @@ fun PreviewPasswordTextFieldLight() {
 @Preview("PasswordTextField dark mode")
 @Composable
 fun PreviewPasswordTextFieldDark() {
-    com.example.ui_components.theme.DesignSystemTheme(darkTheme = true) {
+    DesignSystemTheme(darkTheme = true) {
         Surface {
             val (passwordText, setPasswordText) = remember { mutableStateOf("") }
             PasswordTextField(

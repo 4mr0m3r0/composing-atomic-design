@@ -15,13 +15,23 @@ Read more about Atomic Design methodology: https://atomicdesign.bradfrost.com/ta
 ## Components
 You may find the following list of components customized with styles and animations. 
 
-| Atoms              | Molecules  | Templates      |
-|--------------------|------------|----------------|
-| Button Primary     | AssistChip | Error Template |
-| Button Secondary   |            |                |
-| TextField Password |            |                |
-| TextField Email    |            |                |
-| Type Scale         |            |                |
+### Atoms
+| Buttons           | Text Fields        | Chips      |
+|-------------------|--------------------|------------|
+| PrimaryButton     | PasswordTextField  | AssistChip |
+| SecondaryButton   | EmailTextField     |            |
+| PlainTextButton   |                    |            |
+| AnonymousButton   |                    |            |
+
+### Molecules
+
+
+### Templates
+| Generic Error      | Authentication |
+|--------------------|----------------|
+| ErrorTemplate      | LoginTemplate  |
+
+
 
 ## Jetpack Compose Resources
 
