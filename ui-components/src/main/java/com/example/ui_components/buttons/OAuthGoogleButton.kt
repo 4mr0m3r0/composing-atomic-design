@@ -1,14 +1,15 @@
 package com.example.ui_components.buttons
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Button
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -22,16 +23,20 @@ fun OAuthGoogleButton(
     enabled: Boolean = true,
     text: String
 ) {
-    Button(
+    OutlinedButton(
         onClick = onClick,
         modifier = modifier,
         enabled = enabled,
         colors = ButtonDefaults.buttonColors(
-            containerColor = Color.White,
-            contentColor = Color.Black
+            containerColor = MaterialTheme.colorScheme.background,
+            contentColor = MaterialTheme.colorScheme.onBackground
         )
     ) {
-        Icon(painter = painterResource(id = R.drawable.incognito), contentDescription = null)
+        Image(
+            painter = painterResource(id = R.drawable.oauthg),
+            contentDescription = null,
+            modifier = Modifier.size(18.dp)
+        )
         Text(text = text, modifier = Modifier.padding(start = 8.dp))
     }
 }
@@ -41,7 +46,7 @@ fun OAuthGoogleButton(
 private fun Light() {
     DesignSystemTheme {
         Surface {
-            OAuthGoogleButton(onClick = { /*TODO*/ }, text = "Anonymous Button")
+            OAuthGoogleButton(onClick = { /*TODO*/ }, text = "OAuth Google Button")
         }
     }
 }
@@ -51,7 +56,7 @@ private fun Light() {
 private fun Dark() {
     DesignSystemTheme(darkTheme = true) {
         Surface {
-            OAuthGoogleButton(onClick = { /*TODO*/ }, text = "Anonymous Button")
+            OAuthGoogleButton(onClick = { /*TODO*/ }, text = "OAuth Google Button")
         }
     }
 }

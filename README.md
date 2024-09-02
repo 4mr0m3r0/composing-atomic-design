@@ -16,12 +16,13 @@ Read more about Atomic Design methodology: https://atomicdesign.bradfrost.com/ta
 You may find the following list of components customized with styles and animations. 
 
 ### Atoms
-| Buttons           | Text Fields        | Chips      |
-|-------------------|--------------------|------------|
-| PrimaryButton     | PasswordTextField  | AssistChip |
-| SecondaryButton   | EmailTextField     |            |
-| PlainTextButton   |                    |            |
-| AnonymousButton   |                    |            |
+| Buttons            | Text Fields        | Chips      |
+|--------------------|--------------------|------------|
+| PrimaryButton      | PasswordTextField  | AssistChip |
+| SecondaryButton    | EmailTextField     |            |
+| PlainTextButton    |                    |            |
+| AnonymousButton    |                    |            |
+| OAuthGoogleButton  |                    |            |
 
 ### Molecules
 
