@@ -25,9 +25,9 @@ You may find the following list of components customized with styles and animati
 | OAuthGoogleButton  |                    |            |
 
 ### Molecules
-| App bars         | Navigation       |
-|------------------|------------------|
-| DefaultTopAppBar | DefaultBottomBar |
+| App bars         | Navigation            |
+|------------------|-----------------------|
+| DefaultTopAppBar | DefaultNavigationBar  |
 
 
 ### Templates
