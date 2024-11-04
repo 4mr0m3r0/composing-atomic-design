@@ -3,6 +3,8 @@ package com.example.atomicdesign.ui.pages
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import com.example.atomicdesign.R
 import com.example.atomicdesign.ui.navigation.Actions
 import com.example.atomicdesign.ui.pages.listoflements.Element
 import com.example.atomicdesign.ui.pages.listoflements.ListOfElements
@@ -22,6 +24,10 @@ fun ComponentsIndexScreen(actions: Actions) {
             Element(
                 text = "Filter Assist Chip",
                 onElementSelect = actions.filterAssistChip
+            ),
+            Element(
+                text = stringResource(R.string.navigation_bar_screen).replace(" Screen", ""),
+                onElementSelect = actions.navigationBar
             ),
             Element(
                 text = "Text Fields",

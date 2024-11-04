@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.ui_components.atom.HorizontalDivider
-import com.example.ui_components.molecules.ElementRow
+import com.example.ui_components.lists.ElementRow
 import com.example.ui_components.theme.DesignSystemTheme
 
 @Composable

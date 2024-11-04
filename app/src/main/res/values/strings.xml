@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Atomic Design Sample</string>
+    <string name="buttons_screen">Buttons Screen</string>
+    <string name="navigation_bar_screen">Navigation Bar Screen</string>
     <string name="type_scale">Type Scale</string>
     <string name="email">Email</string>
     <string name="password">Password</string>

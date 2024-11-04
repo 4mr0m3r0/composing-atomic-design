@@ -1,4 +1,4 @@
-package com.example.ui_components.molecules
+package com.example.ui_components.chips
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.AnimatedVisibilityScope

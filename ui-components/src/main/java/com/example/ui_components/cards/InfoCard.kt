@@ -1,4 +1,4 @@
-package com.example.ui_components.molecules
+package com.example.ui_components.cards
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column

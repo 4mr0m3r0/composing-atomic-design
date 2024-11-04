@@ -1,4 +1,4 @@
-package com.example.ui_components.molecules
+package com.example.ui_components.lists
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Row
